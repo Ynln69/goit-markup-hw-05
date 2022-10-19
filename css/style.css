@@ -559,9 +559,12 @@ img {
   letter-spacing: 0.03em;
   opacity: 1;
 }
+
 .card-link {
   display: inline-block;
+  transition: box-shadow 250ms var(--time-function);
 }
+
 .card-link:hover .card-overlay,
 .card-link:focus .card-overlay {
   transform: translateY(0);
