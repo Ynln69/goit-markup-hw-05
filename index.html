@@ -64,7 +64,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn">Замовити послугу</button>
+          <button type="button" class="btn" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--Особливості-->
@@ -128,28 +130,43 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                src="./images/img.jpg"
-                alt="розробка сайту та написання коду"
-                width="370"
-                class="about-img"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/img.jpg"
+                  alt="розробка сайту та написання коду"
+                  width="370"
+                  class="about-img"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="about-item">
-              <img
-                src="./images/img2.jpg"
-                alt="розробка мобільних додатків"
-                width="370"
-                class="about-img"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/img2.jpg"
+                  alt="розробка мобільних додатків"
+                  width="370"
+                  class="about-img"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text mobile">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="about-item">
-              <img
-                src="./images/img3.jpg"
-                alt="вектор кольорова палітра"
-                width="370"
-                class="about-img"
-              />
+              <div class="about-thumb">
+                <img
+                  src="./images/img3.jpg"
+                  alt="вектор кольорова палітра"
+                  width="370"
+                  class="about-img"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text desing">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -473,5 +490,17 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close" data-modal-close>
+          <svg class="close-svg" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Скрипт -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
